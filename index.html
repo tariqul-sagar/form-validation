@@ -416,32 +416,44 @@
         </div>
       </form>
 
+      <!-- Validation -->
       <h2>Validation</h2>
       <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <!-- First Name -->
+        <div class="col-md-6">
+          <label for="f_name" class="form-label">First name</label>
+          <input type="text" class="form-control f_name" name="f_name" id="f_name" placeholder="Enter Your First Name" required>
           <div class="valid-feedback">
             Looks good!
           </div>
+          <div class="invalid-feedback">
+              Please Enter Your First Name.
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <!-- Last name -->
+        <div class="col-md-6">
+          <label for="l_name" class="form-label">Last name</label>
+          <input type="text" class="form-control l_name" name="l_name" id="l_name" placeholder="Enter Your Last Name" required>
           <div class="valid-feedback">
             Looks good!
           </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
+          <div class="invalid-feedback">
+              Please Enter Your Last Name.
           </div>
         </div>
+
+        <!-- Email -->
+        <div class="col-md-12">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control email" name="email" id="email" placeholder="Enter Your Email" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Please Enter Your Email.
+          </div>
+        </div>
+        
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">City</label>
           <input type="text" class="form-control" id="validationCustom03" required>
@@ -482,6 +494,7 @@
         </div>
       </form>
 
+      <!-- Tooltips -->
       <h2>Tooltips</h2>
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4 position-relative">
