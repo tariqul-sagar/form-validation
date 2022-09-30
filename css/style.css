@@ -1,0 +1,15 @@
+h2{
+	margin: 0;
+	padding: 8px 0;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #626262;
+}
+h2:not(:first-child){
+	margin: 20px 0;
+}
+form{
+	margin-top: 20px;
+}
